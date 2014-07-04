@@ -60,6 +60,8 @@ Let's look at an example:
     /**
      * The difference when using JdbcConnector is you don't have to
      * worry about tracking and closing objects, or excessive try..catch blocks.
+     *
+     * See: JdbcConnector.java for more information!
      */
     public void jdbcConnectorExample() {
 
@@ -67,6 +69,8 @@ Let's look at an example:
         JdbcConnector conn = new JdbcConnector();
 
         try {
+
+            // If anything throws, everything will automatically get closed.
 
             conn.setConnection(getConnection(), true);
 
