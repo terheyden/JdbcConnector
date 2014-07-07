@@ -1,5 +1,3 @@
-package com.terheyden;
-
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +15,8 @@ import java.sql.Timestamp;
  *
  * For best results, use "rewriteBatchedStatements=true":
  * Connection c = DriverManager.getConnection("jdbc:mysql://host:3306/db?useServerPrepStmts=false&rewriteBatchedStatements=true", "username", "password");
+ *
+ * @author Luke Terheyden (terheyden@gmail.com)
  */
 public class JdbcConnector {
 
